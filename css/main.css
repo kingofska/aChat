@@ -1,0 +1,205 @@
+@media screen and (min-width: 1100px) { 
+	section{
+		margin: 100px;
+		margin-top: 50px;
+	}
+	#chatScreen{
+		float: left;
+	}
+	#userPanel{
+		float: right;
+	}
+
+	
+}
+@media screen and (max-width: 1100px) { 
+	section{
+		margin: 50px auto;
+		box-shadow: 1px 1px 20px #000;
+	}
+
+	#chatScreen{
+		border: 5px solid orange;
+	}
+	#userPanel{
+		border: 5px solid green;
+	}
+}
+header{
+	border: 5px solid red;
+	border-radius: 15px ;
+	text-align: center;
+	box-shadow: 1px 4px 20px #d7d7d7;
+	font-family: "Ubuntu Mono";
+	width: 85%;
+	margin: auto;
+	text-shadow: 1px 1px 1px #EFEFEF;
+}
+section, ul{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+#chatScreen{
+	max-width: 500px;
+	min-width: 200px;
+	border: 5px solid green;
+	border-radius: 15px;
+	padding: 25px;
+	padding-bottom: 65px;
+}
+	.loading{
+		background: url('http://www.inadriahotels.it/_layout/loader.gif') no-repeat;
+	}
+	#chatScreen ul{
+		border: 1px dotted green;
+		max-width: 500px;
+		overflow: auto;
+		background: #fff;
+		min-width: 200px;
+		max-height: 600px;
+		
+
+	}
+	#chatScreen ::-webkit-scrollbar {
+    	width: 12px;
+	}
+
+	#chatScreen ::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	    border-radius: 10px;
+	}
+
+	#chatScreen ::-webkit-scrollbar-thumb {
+	    border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+	}
+
+	#chatScreen ::-webkit-scrollbar-thumb:hover {
+	  background-color: green;
+	}
+
+	#chatScreen ::-webkit-scrollbar-thumb:active {
+	  border:3px dotted white;
+	}
+
+	#chatScreen ::-webkit-scrollbar-track:hover {
+	  background-color: maroon;
+	}
+		#chatScreen ul li{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+		}
+
+#userPanel{
+	border: 5px solid orange;
+	max-width: 500px;
+	padding: 15px;
+	border-radius: 12px;
+	border-image: initial;	
+}
+	#chatForm{
+		max-width: 400px;
+
+	}
+		#chatForm input,#chatForm textarea{
+			margin-top: 5px;
+			border: 1px solid orange;
+			padding: 5px;
+		}
+		#chatForm textarea{
+			width:100%;
+			height:100px;
+		}
+		#chatForm span{
+			display: block;
+			width: 135px;
+			float: left;
+			font-weight: bold;
+			font-family: sans-serif;
+			text-shadow: 1px 1px 1px #EFEFEF;
+		}
+		#sendMessage {
+			display: block;
+		}
+		.nickname{
+			font-weight: bold;
+			padding-right: 5px;
+		}
+
+		.date{
+			color: grey;
+			font-size: 85%;
+			padding-right: 10px;
+		}
+
+		#chatform input.button {
+			font-weight: bold;
+			display: inline-block;
+			margin-top: 15px;
+			outline: none;
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			font: 14px/100% Arial, Helvetica, sans-serif;
+			padding: .5em 2em .55em;
+			text-shadow: 0 1px 1px rgba(0,0,0,.3);
+			-webkit-border-radius: .5em; 
+			-moz-border-radius: .5em;
+			border-radius: .5em;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+			box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		}
+		.button:hover {
+			text-decoration: none;
+		}
+		.button:active {
+			position: relative;
+			top: 1px;
+		}
+		#chatform input[type='text']:focus{
+			border: 1px solid gold;
+		}
+		/* red */
+		#chatform input.red {
+			color: #faddde;
+			border: solid 1px #980c10;
+			background: #d81b21;
+			background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+			background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+		}
+		#chatform input.red:hover {
+			background: #b61318;
+			background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+			background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+		}
+		#chatform input.red:active {
+			color: #de898c;
+			background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+			background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+			filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+		}
+		
+		#chatform input.green:hover {
+			background: #538018;
+			background: -webkit-gradient(linear, left top, left bottom, from(#6B9D28), to(#436B0C));
+			background: -moz-linear-gradient(top, #6B9D28, #436B0C);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+		}
+		#chatform input.button:hover {
+			text-decoration: none;
+		}
+		#chatform input.green {
+			color: #E8F0DE;
+			border: solid 1px #538312;
+			background: #64991E;
+			background: -webkit-gradient(linear, left top, left bottom, from(#7DB72F), to(#4E7D0E));
+			background: -moz-linear-gradient(top, #7DB72F, #4E7D0E);
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+		}
